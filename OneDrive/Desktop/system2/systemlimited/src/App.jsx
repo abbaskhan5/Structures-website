@@ -9,6 +9,7 @@ import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import Portfolio from "./component/Portfolio";
 import FooterCat from "./component/FooterCate";
+import Sucess from "./component/Sucess";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <div id="courses">
         <Courses />
       </div>
+      <Sucess/>
       <div id="team">
         <OurTeam />
       </div>

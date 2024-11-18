@@ -35,7 +35,7 @@ const Portfolio = () => {
                     onClick={() => handleProject("all")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "all"
-                        ? "activeClasses bg-primary text-white"
+                        ? "activeClasses bg-primary text-blue-900"
                         : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-blue-900"
                     }`}
                   >

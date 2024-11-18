@@ -1,5 +1,6 @@
 import React from "react";
-import logo from '../images/logo.png'
+// import logo from '../images/logo.png'
+import footerLog from '../images/whitLog.png'
 
 const Footer = () => {
   return (
@@ -11,12 +12,12 @@ const Footer = () => {
               <div className="mb-10 w-full">
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
                   <img
-                    src={logo}
+                    src={footerLog}
                     alt="logo"
                     className="max-w-full dark:hidden"
                   />
                   <img
-                    src={logo}
+                    src={footerLog}
                     alt="logo"
                     className="max-w-full hidden dark:block ml-10"
                   />
@@ -148,7 +149,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="text-base text-body-color dark:text-dark-6">
-                  &copy; 2025 Abbas khan
+                  &copy; Powered by Structures Limited. All rights reserved.
                 </p>
               </div>
             </div>

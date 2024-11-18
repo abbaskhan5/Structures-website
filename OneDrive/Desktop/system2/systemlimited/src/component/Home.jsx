@@ -1,32 +1,59 @@
-import React from 'react';
-import  backgroundvideo from '../video/hdvideos.mp4'
+import React, { useState, useEffect } from "react";
+import SlideOne from '../images/slideOne.png';
+
+const slides = [
+  {
+    titlePartOne: "Lessons and insights",
+    titlePartTwo: "from 8 years",
+    description: "Where to grow your business as a photographer: site or social media?",
+    image: SlideOne,
+  },
+  {
+    titlePartOne: "Grow your photography skills",
+    titlePartTwo: "with new techniques",
+    description: "Discover new techniques and expand your portfolio.",
+    image: SlideOne,
+  },
+  {
+    titlePartOne: "Connect with your audience",
+    titlePartTwo: "through social media",
+    description: "Learn effective ways to engage with followers online.",
+    image: SlideOne,
+  },
+];
 
 const HeroSection = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden ">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute w-full h-full object-cover"
-      >
-        <source src={backgroundvideo} type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-black/50" />
-      <div className="relative container mx-auto px-4 text-center text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-          <span>Transform </span>
-          <span className="text-secondary">Your Future</span>
+    <section className="relative flex flex-col md:flex-row items-center justify-between py-20 px-4 md:px-16 bg-gray-100 h-auto md:h-[90vh] overflow-hidden">
+      {/* Text Section */}
+      <div className="text-center md:text-left md:w-1/2 transition-transform duration-1000 ease-in-out">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <span className="text-gray-800">{slides[currentSlide].titlePartOne} </span>
+          <span className="text-sky-800">{slides[currentSlide].titlePartTwo}</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in">
-        Empowering your business with cutting-edge IT services and training. Transform your ideas into reality with our expert solutions and courses. Let's build the future together.
+        <p className="text-gray-600 mb-6">
+          {slides[currentSlide].description}
         </p>
-        <button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all transform hover:scale-105 animate-fade-in border-8">
-          Learn More
-        </button>
       </div>
-    </div>
+
+      {/* Image Section */}
+      <div className="mt-4 md:mt-0 md:w-1/2 flex justify-center transition-transform duration-1000 ease-in-out">
+        <img
+          src={slides[currentSlide].image}
+          alt="Hero Illustration"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain h-[370px]"
+        />
+      </div>
+    </section>
   );
 };
 

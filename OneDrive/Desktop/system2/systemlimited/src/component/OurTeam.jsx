@@ -6,7 +6,7 @@ import Ceoibrahim from '../images/ceoibrahim.jpeg'
 import Sawerpic from '../images/sawerpic.jpeg'
 import Mubisher from '../images/mubisherpic.jpg'
 import mempic from '../images/mempic.jpg'
-
+import hamadpic from '../images/hamadpic.jpg'
 const teamMembers = [
   {
     name: "Malik Ibrahim Awan",
@@ -42,13 +42,13 @@ const teamMembers = [
   {
     name: "Hammad Sajid",
     position: "Director of Designs & Editing",
-    image: "https://via.placeholder.com/150",
+    image: hamadpic,
   },
-  {
-    name: "Emma Watson",
-    position: "Project Manager",
-    image: "https://via.placeholder.com/150",
-  },
+  // {
+  //   name: "Emma Watson",
+  //   position: "Project Manager",
+  //   image: "https://via.placeholder.com/150",
+  // },
 ];
 
 const OurTeam = () => {

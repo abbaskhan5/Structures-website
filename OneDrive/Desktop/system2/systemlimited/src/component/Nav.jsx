@@ -10,7 +10,7 @@ const Nav = () => {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-10">
         <div className="flex h-16 items-center justify-between">
           {/* Logo Section */}
-          <div className="flex items-center lg:mt-4 lg:ml-16">
+          <div className="flex items-center lg:mt-4 lg:ml-10">
             <a href="/" className="block h-12 w-36">
               <img src={logo} alt="Logo" />
             </a>
