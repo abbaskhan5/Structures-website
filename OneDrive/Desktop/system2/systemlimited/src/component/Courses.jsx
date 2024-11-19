@@ -33,12 +33,12 @@ const courses = [
     icon: <FaMobileAlt className="text-4xl text-primary" />,
   },
   {
-    title: "React Native Development",
+    title: "React Native",
     details: "Cross-platform mobile applications using React Native.",
     icon: <FaReact className="text-4xl text-primary" />,
   },
   {
-    title: "Flutter Development",
+    title: "Flutter",
     details: "Developing cross-platform apps using Flutter.",
     icon: <FaAndroid className="text-4xl text-primary" />,
   },
@@ -88,7 +88,7 @@ const courses = [
     icon: <FaWordpress className="text-4xl text-primary" />,
   },
   {
-    title: "SEO Optimization",
+    title: "SEO",
     details: "Improve search engine rankings and website traffic.",
     icon: <FaSearch className="text-4xl text-primary" />,
   },
