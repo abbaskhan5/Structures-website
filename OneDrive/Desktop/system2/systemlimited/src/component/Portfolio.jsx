@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
 
@@ -104,7 +105,7 @@ const Portfolio = () => {
             />
             <PortfolioCard
               ImageHref="https://i.ibb.co/PT7ghRs/image-06.jpg"
-              category="marketing"
+              category="Marketing"
               title="Creative Agency"
               button="View Details"
               buttonHref="#"
@@ -112,7 +113,7 @@ const Portfolio = () => {
             />
             <PortfolioCard
               ImageHref="https://i.ibb.co/vkt8C1P/image-02.jpg"
-              category="marketing"
+              category="Marketing"
               title="Creative Agency"
               button="View Details"
               buttonHref="#"
@@ -158,6 +159,7 @@ const PortfolioCard = ({
   title,
   button,
   buttonHref,
+  
 }) => {
   return (
     <>
@@ -183,6 +185,7 @@ const PortfolioCard = ({
             >
               {button}
             </a>
+            
           </div>
         </div>
       </div>

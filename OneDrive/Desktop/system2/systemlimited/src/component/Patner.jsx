@@ -4,7 +4,8 @@ import logo2 from '../images/travalair.jpeg';
 import logo3 from '../images/yousifT.jpeg';
 import logo4 from '../images/namal.jpeg';
 import logo5 from '../images/iqraLog.png';
-import logo6 from '../images/aireLog.png';  
+import logo6 from '../images/aireLog.png';
+import logo7 from '../images/pait.jpeg'; 
 
 const partners = [
   { name: 'Salesforce', logo: logo1 },
@@ -12,7 +13,8 @@ const partners = [
   { name: 'Microsoft', logo: logo3 },
   { name: 'AWS', logo: logo4 },
   { name: 'Google', logo: logo5 },
-  { name: 'Partner 6', logo: logo6 }, 
+  { name: 'Partner 6', logo: logo6 },
+  { name: 'Partner 7', logo: logo7 },
 ];
 
 const PartnersSection = () => {

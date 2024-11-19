@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 import Rishidpic from '../images/rashidpic.jpeg'
 import Shrazpic from '../images/shrazpic.jpeg'
 import Ceoibrahim from '../images/ceoibrahim.jpeg'
@@ -15,7 +16,7 @@ const teamMembers = [
   },
   {
     name: "Saira Ramzan",
-    position: "Co-Founder",
+    position: "HR | Co-Founder",
     image: mempic,
   },
   {
@@ -30,13 +31,13 @@ const teamMembers = [
   },
   {
     name: "Mubashir Hussain ",
-    position: "Bussiness Development Manager",
+    position: "Bussiness Development Officer",
     image: Mubisher,
   },
   {
    
     name: "Sheraz Ahmed",
-    position: "Finance Manager",
+    position: "Finance Director",
     image: Shrazpic,
   },
   {
@@ -77,11 +78,11 @@ const OurTeam = () => {
               <h3 className="text-lg font-bold text-gray-800">{member.name}</h3>
               <p className="text-gray-600 text-sm">{member.position}</p>
               <div className="flex justify-center gap-4 mt-4 text-gray-500">
-                <a href="#" className="hover:text-blue-500">
+                <a href="https://www.facebook.com/profile.php?id=61562891199756&mibextid=LQQJ4d" className="hover:text-blue-500">
                   <FaFacebookF />
                 </a>
-                <a href="#" className="hover:text-blue-400">
-                  <FaTwitter />
+                <a href="mailto:limitedstructures@gmail.com" className="hover:text-blue-400">
+                <MdOutlineEmail />
                 </a>
                 <a href="#" className="hover:text-pink-500">
                   <FaInstagram />
