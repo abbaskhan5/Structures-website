@@ -126,7 +126,7 @@ const courses = [
 
 const Courses = () => {
   const createWhatsAppLink = (courseTitle) => {
-    const phoneNumber = "923340002029"; // Your phone number in international format
+    const phoneNumber = "923340002029"; 
     const message = `Hi, are you offering the ${courseTitle} course?`;
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;

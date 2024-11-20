@@ -8,7 +8,7 @@ const FooterCat = () => {
       </blockquote>
       <p className="text-lg font-semibold text-gray-800">Ahmed Yousaf</p>
       <p className="text-sm text-gray-500">Founder, Yousaf Travels</p>
-      <div className="mt-6 text-2xl text-gray-800">&rarr;</div>
+      
     </footer>
   );
 };

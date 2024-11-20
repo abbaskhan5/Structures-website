@@ -5,7 +5,7 @@ import logo3 from '../images/yousifT.jpeg';
 import logo4 from '../images/namal.jpeg';
 import logo5 from '../images/iqraLog.png';
 import logo6 from '../images/aireLog.png';
-import logo7 from '../images/pait.jpeg'; 
+import logo7 from '../images/pitt.png'; 
 
 const partners = [
   { name: 'Salesforce', logo: logo1 },
